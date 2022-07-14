@@ -1,0 +1,20 @@
+<table id="users">
+  <tr>
+    <th *ngFor="let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor="let row of weatherForDays">
+    <td>
+      {{row.date}}
+    </td>
+    <td>
+      {{row.avgtemp_c}}
+    </td>
+    <td>
+      {{row.avgvis_km}}
+    </td>
+  </tr>
+
+</table>
